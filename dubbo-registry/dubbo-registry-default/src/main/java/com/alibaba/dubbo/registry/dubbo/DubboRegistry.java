@@ -44,7 +44,7 @@ public class DubboRegistry extends FailbackRegistry {
     private final static Logger logger = LoggerFactory.getLogger(DubboRegistry.class); 
 
     // 重连检测周期3秒(单位毫秒)
-    private static final int RECONNECT_PERIOD_DEFAULT = 3 * 1000;
+    private static final int RECONNECT_PERIOD_DEFAULT = 30 * 1000;
     
     // 定时任务执行器
     private final ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(1, new NamedThreadFactory("DubboRegistryReconnectTimer", true));

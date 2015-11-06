@@ -22,19 +22,23 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.junit.Test;
+
 import junit.framework.Assert;
 import junit.framework.TestCase;
 
 public class JSONTest extends TestCase
-{
+{ 
+	@Test
 	public void testException() throws Exception {
-		MyException e = new MyException("001", "AAAAAAAA");
+		System.out.println("+++++++++++++++++++++++");
+		MyException e = new MyException("	", "AAAAAAAA");
 		
 		StringWriter writer = new StringWriter();
 		JSON.json(e, writer);
 		String json = writer.getBuffer().toString();
-		System.out.println(json);
-		// Assert.assertEquals("{\"code\":\"001\",\"message\":\"AAAAAAAA\"}", json);
+		System.out.println(json+"+++++++++++++++++++++++");
+		Assert.assertEquals("{\"code\":\"001\",\"message\":\"AAAAAAAA\"}", json);
 		
 		StringReader reader = new StringReader(json);
 		MyException result = JSON.parse(reader, MyException.class);
