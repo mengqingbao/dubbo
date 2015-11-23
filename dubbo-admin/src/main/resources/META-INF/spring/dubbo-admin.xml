@@ -20,9 +20,9 @@
 	
 	<dubbo:application name="dubbo-admin" />
 
-	<dubbo:registry address="${dubbo.registry.address}" check="false" file="false" />
+	<dubbo:registry address="${dubbo.registry.address}" username="guest" password="guest123" check="false" file="false" protocol="zookeeper"/>
 
-	<dubbo:reference id="registryService" interface="com.alibaba.dubbo.registry.RegistryService" timeout="30000" check="false" />
+	<dubbo:reference id="registryService" interface="com.alibaba.dubbo.registry.RegistryService" timeout="30000" check="false"/>
 
 	<bean id="configService" class="com.alibaba.dubbo.governance.service.impl.ConfigServiceImpl" />
 	
