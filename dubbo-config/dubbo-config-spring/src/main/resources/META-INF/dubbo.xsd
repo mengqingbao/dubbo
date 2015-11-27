@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<xsd:schema xmlns="http://code.alibabatech.com/schema/dubbo"
+<xsd:schema xmlns="http://www.chinasoft.pro/schema/dubbo"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
 	xmlns:beans="http://www.springframework.org/schema/beans"
 	xmlns:tool="http://www.springframework.org/schema/tool"
-	targetNamespace="http://code.alibabatech.com/schema/dubbo">
+	targetNamespace="http://www.chinasoft.pro/schema/dubbo">
 	
 	<xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
 	<xsd:import namespace="http://www.springframework.org/schema/beans"/>
@@ -156,7 +156,7 @@
 				</xsd:attribute>
 				<xsd:attribute name="scope" type="xsd:string" use="optional">
 					<xsd:annotation>
-						<xsd:documentation><![CDATA[ Defines the service visibility, choise:[local remote]. default is remote, which can be invoked by network。  ]]></xsd:documentation>
+						<xsd:documentation><![CDATA[ Defines the service visibility, choise:[local remote]. default is remote, which can be invoked by network  ]]></xsd:documentation>
 					</xsd:annotation>
 				</xsd:attribute>
 			</xsd:extension>
