@@ -29,3 +29,7 @@ target/
 .DS_Store
 Thumbs.db
 *.orig
+*/.externalToolBuilders/*
+maven-eclipse.xml
+.externalToolBuilders/*
+Maven_Ant_builder.launch
